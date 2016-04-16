@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane fx:id="fondo" prefHeight="300.0" prefWidth="500.0">
+         <children>
+            <Label fx:id="reg1" layoutX="40.0" layoutY="78.0" text="Su nombre" />
+            <Label fx:id="reg2" layoutX="42.0" layoutY="123.0" text="Su edad" />
+            <TextArea fx:id="nom1" layoutX="168.0" layoutY="72.0" prefHeight="30.0" prefWidth="164.0" promptText="Introduzca su nombre" />
+            <TextArea fx:id="edad" layoutX="168.0" layoutY="117.0" prefHeight="30.0" prefWidth="164.0" promptText="Introduzca su edad" />
+            <Button fx:id="boton" layoutX="223.0" layoutY="184.0" mnemonicParsing="false" onAction="#pulsar" text="Votar" />
+            <Label fx:id="confir" layoutX="168.0" layoutY="252.0" prefWidth="127.0" />
+         </children>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
